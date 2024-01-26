@@ -1,0 +1,11 @@
+name_sensors,Range_Min,Range_Max
+ciao,2.0,1.0
+mi,1.0,1.0
+chiamo,2.0,1.0
+giuseppe,3.0,1.0
+e,1.0,3.0
+sono,2.0,1.0
+un,1.0,1.0
+muratore,1.0,1.0
+famosissimo,1.0,1.0
+nelmondo,1.2,1.1
