@@ -35,19 +35,9 @@ int config_sens(float*** mapping, int num_sens) {
 
     char line[MAX_VAL];
     fgets(line, sizeof(line), file);
-    int name=0;
+    //int name=0;
     int i = 0;
-    while (fscanf(file, "%d,%f,%f\n",&name,&(*mapping)[i][2], &(*mapping)[i][3]) != EOF) {
-        (*mapping)[i][0] = 0;
-        (*mapping)[i][1] = 4095;
-        if(name == 2){
-            (*mapping)[i][0] = 0;
-            (*mapping)[i][1] = 3365;
-        }
-        if(name == 3){
-            (*mapping)[i][0] = 0;
-            (*mapping)[i][1] = 3280;
-        }
+    while (fscanf(file, "%*d,%f,%f,%f,%f\n",&(*mapping)[i][0], &(*mapping)[i][1], &(*mapping)[i][2], &(*mapping)[i][3]) != EOF) {
         i++;
     }
 
